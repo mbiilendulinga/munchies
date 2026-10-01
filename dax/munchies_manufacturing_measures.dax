@@ -1,0 +1,264 @@
+-- =========================================================
+-- MUNCHIES MANUFACTURING & COMMERCIAL ANALYTICS
+-- POWER BI DAX MEASURES
+-- No Date Table
+-- =========================================================
+
+
+-- =========================================================
+-- GENERAL / EXECUTIVE OVERVIEW
+-- =========================================================
+
+Total Revenue =
+SUM('munchies sales'[revenue])
+
+Total Cost =
+SUM('munchies sales'[cost])
+
+Total Profit =
+SUM('munchies sales'[profit])
+
+Profit Margin =
+DIVIDE(
+    [Total Profit],
+    [Total Revenue],
+    0
+)
+
+Units Sold =
+SUM('munchies sales'[quantity])
+
+Total Customers =
+DISTINCTCOUNT('munchies customers'[customer_id])
+
+Total Products =
+DISTINCTCOUNT('munchies products'[product_id])
+
+
+-- =========================================================
+-- SALES & REVENUE
+-- =========================================================
+
+Average Sale Value =
+DIVIDE(
+    [Total Revenue],
+    DISTINCTCOUNT('munchies sales'[sale_id]),
+    0
+)
+
+Average Selling Price =
+DIVIDE(
+    [Total Revenue],
+    [Units Sold],
+    0
+)
+
+Total Discount =
+SUM('munchies sales'[discount])
+
+
+-- =========================================================
+-- CUSTOMERS & PRODUCTS
+-- =========================================================
+
+Active Customers =
+CALCULATE(
+    DISTINCTCOUNT('munchies customers'[customer_id]),
+    'munchies customers'[status] = "Active"
+)
+
+Customer Revenue =
+[Total Revenue]
+
+Average Revenue per Customer =
+DIVIDE(
+    [Total Revenue],
+    [Total Customers],
+    0
+)
+
+
+-- =========================================================
+-- PRODUCTION & MANUFACTURING
+-- =========================================================
+
+Planned Production =
+SUM('munchies production'[planned_quantity])
+
+Actual Production =
+SUM('munchies production'[produced_quantity])
+
+Rejected Units =
+SUM('munchies production'[rejected_quantity])
+
+Production Achievement =
+DIVIDE(
+    [Actual Production],
+    [Planned Production],
+    0
+)
+
+Rejection Rate =
+DIVIDE(
+    [Rejected Units],
+    [Actual Production],
+    0
+)
+
+Total Downtime =
+SUM('munchies production'[downtime_hours])
+
+Production Cost =
+SUM('munchies production'[production_cost])
+
+
+-- =========================================================
+-- INVENTORY
+-- =========================================================
+
+Closing Stock =
+SUM('munchies inventory'[closing_stock])
+
+Stock Value =
+SUM('munchies inventory'[stock_value])
+
+Damaged Units =
+SUM('munchies inventory'[damaged_units])
+
+Damage Rate =
+DIVIDE(
+    [Damaged Units],
+    SUM('munchies inventory'[opening_stock]),
+    0
+)
+
+
+-- =========================================================
+-- PROCUREMENT & SUPPLIERS
+-- =========================================================
+
+Total Procurement Cost =
+SUM('munchies purchases'[total_cost])
+
+Quantity Ordered =
+SUM('munchies purchases'[quantity_ordered])
+
+Quantity Received =
+SUM('munchies purchases'[quantity_received])
+
+Purchase Fulfillment Rate =
+DIVIDE(
+    [Quantity Received],
+    [Quantity Ordered],
+    0
+)
+
+Purchase Orders =
+DISTINCTCOUNT('munchies purchases'[purchase_id])
+
+On-Time Purchases =
+CALCULATE(
+    DISTINCTCOUNT('munchies purchases'[purchase_id]),
+    FILTER(
+        'munchies purchases',
+        NOT ISBLANK('munchies purchases'[actual_receipt_date]) &&
+        'munchies purchases'[actual_receipt_date]
+            <= 'munchies purchases'[expected_date]
+    )
+)
+
+Supplier On-Time Rate =
+DIVIDE(
+    [On-Time Purchases],
+    [Purchase Orders],
+    0
+)
+
+
+-- =========================================================
+-- DELIVERY & LOGISTICS
+-- =========================================================
+
+Total Deliveries =
+DISTINCTCOUNT('munchies deliveries'[delivery_id])
+
+Delivery Cost =
+SUM('munchies deliveries'[delivery_cost])
+
+Total Distance =
+SUM('munchies deliveries'[distance_km])
+
+Average Delivery Distance =
+AVERAGE('munchies deliveries'[distance_km])
+
+Quantity Delivered =
+SUM('munchies deliveries'[quantity_shipped])
+
+Average Delivery Days =
+AVERAGEX(
+    FILTER(
+        'munchies deliveries',
+        NOT ISBLANK('munchies deliveries'[delivery_date])
+    ),
+    DATEDIFF(
+        'munchies deliveries'[shipment_date],
+        'munchies deliveries'[delivery_date],
+        DAY
+    )
+)
+
+
+-- =========================================================
+-- QUALITY & RETURNS
+-- =========================================================
+
+Quality Events =
+DISTINCTCOUNT('munchies quality_returns'[quality_return_id])
+
+Quality Quantity =
+SUM('munchies quality_returns'[quantity])
+
+Returned Quantity =
+CALCULATE(
+    [Quality Quantity],
+    'munchies quality_returns'[event_type] = "Return"
+)
+
+Defective Quantity =
+CALCULATE(
+    [Quality Quantity],
+    'munchies quality_returns'[event_type] = "Defect"
+)
+
+Return Rate =
+DIVIDE(
+    [Returned Quantity],
+    [Units Sold],
+    0
+)
+
+
+-- =========================================================
+-- EXPENSES & FINANCE
+-- =========================================================
+
+Total Expenses =
+SUM('munchies expenses'[amount])
+
+Average Expense =
+AVERAGE('munchies expenses'[amount])
+
+
+-- =========================================================
+-- OVERALL FINANCIAL PERFORMANCE
+-- =========================================================
+
+Net Operating Result =
+[Total Profit] - [Total Expenses]
+
+Operating Margin =
+DIVIDE(
+    [Net Operating Result],
+    [Total Revenue],
+    0
+)

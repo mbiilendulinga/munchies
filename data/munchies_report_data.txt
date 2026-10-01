@@ -1,0 +1,1144 @@
+MUNCHIES POWER BI REPORT DATA
+================================================================================
+Database: munchies
+Purpose: Supporting data for Power BI documentation and GitHub project files.
+
+================================================================================
+DATABASE TABLES AND ROW COUNTS
+================================================================================
+table_name | row_count
+--------------------------------------------------------------------------------
+products | 17
+customers | 127
+suppliers | 42
+raw_materials | 61
+purchases | 4,137
+production | 11,173
+bill_of_materials | 89
+inventory | 22,718
+sales | 78,143
+deliveries | 31,684
+quality_returns | 1,847
+expenses | 3,126
+
+================================================================================
+OVERALL DATE RANGE
+================================================================================
+earliest_date | latest_date
+--------------------------------------------------------------------------------
+2023-01-01 | 2026-02-07
+
+================================================================================
+EXECUTIVE SUMMARY KPIs
+================================================================================
+total_revenue | total_cost | total_profit | overall_profit_margin | units_sold | active_buying_customers | products_sold
+--------------------------------------------------------------------------------
+1,671,396,539.75 | 1,178,786,862.17 | 539,868,152.26 | 32.30 | 45,887,744.00 | 127 | 17
+
+================================================================================
+REVENUE BY SALES CHANNEL
+================================================================================
+sales_channel | revenue | profit | profit_margin
+--------------------------------------------------------------------------------
+Direct Sales | 836,829,319.01 | 270,285,987.71 | 32.30
+Wholesale | 352,428,804.42 | 112,506,934.25 | 31.92
+Distributor | 305,335,612.25 | 94,803,050.42 | 31.05
+Key Account | 131,393,601.27 | 46,116,184.77 | 35.10
+Retail | 45,409,202.80 | 16,155,995.11 | 35.58
+
+================================================================================
+PROFIT BY CATEGORY
+================================================================================
+category | revenue | cost | profit | profit_margin
+--------------------------------------------------------------------------------
+Cereal | 1,341,003,900.98 | 969,967,492.10 | 409,612,303.14 | 30.55
+Snacks | 330,392,638.77 | 208,819,370.07 | 130,255,849.12 | 39.42
+
+================================================================================
+REVENUE VS PROFIT BY YEAR
+================================================================================
+year | revenue | profit | cost
+--------------------------------------------------------------------------------
+2,023 | 362,976,959.17 | 117,321,886.13 | 255,594,894.17
+2,024 | 508,772,721.97 | 164,673,226.84 | 358,945,273.85
+2,025 | 799,646,858.61 | 257,873,039.29 | 564,246,694.15
+
+================================================================================
+REVENUE TREND
+================================================================================
+year | month | period | revenue
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 25,063,374.07
+2,023 | 2 | 2023-02 | 23,777,334.33
+2,023 | 3 | 2023-03 | 28,281,910.99
+2,023 | 4 | 2023-04 | 28,610,011.52
+2,023 | 5 | 2023-05 | 29,088,913.24
+2,023 | 6 | 2023-06 | 31,533,363.32
+2,023 | 7 | 2023-07 | 30,154,416.08
+2,023 | 8 | 2023-08 | 33,255,790.09
+2,023 | 9 | 2023-09 | 28,813,822.45
+2,023 | 10 | 2023-10 | 32,727,503.81
+2,023 | 11 | 2023-11 | 36,633,033.73
+2,023 | 12 | 2023-12 | 35,037,485.54
+2,024 | 1 | 2024-01 | 27,750,338.42
+2,024 | 2 | 2024-02 | 28,532,508.79
+2,024 | 3 | 2024-03 | 35,423,117.61
+2,024 | 4 | 2024-04 | 35,369,074.52
+2,024 | 5 | 2024-05 | 40,197,856.64
+2,024 | 6 | 2024-06 | 41,151,475.70
+2,024 | 7 | 2024-07 | 46,003,884.23
+2,024 | 8 | 2024-08 | 47,477,142.41
+2,024 | 9 | 2024-09 | 47,057,603.97
+2,024 | 10 | 2024-10 | 49,453,244.82
+2,024 | 11 | 2024-11 | 51,768,864.49
+2,024 | 12 | 2024-12 | 58,587,610.37
+2,025 | 1 | 2025-01 | 48,332,228.66
+2,025 | 2 | 2025-02 | 50,615,444.03
+2,025 | 3 | 2025-03 | 65,329,531.46
+2,025 | 4 | 2025-04 | 63,419,479.20
+2,025 | 5 | 2025-05 | 66,292,902.11
+2,025 | 6 | 2025-06 | 73,506,446.83
+2,025 | 7 | 2025-07 | 72,745,663.08
+2,025 | 8 | 2025-08 | 70,913,159.32
+2,025 | 9 | 2025-09 | 68,798,724.44
+2,025 | 10 | 2025-10 | 65,575,508.31
+2,025 | 11 | 2025-11 | 77,176,792.21
+2,025 | 12 | 2025-12 | 76,940,978.96
+
+================================================================================
+MONTHLY REVENUE
+================================================================================
+month | revenue
+--------------------------------------------------------------------------------
+2023-01 | 25,063,374.07
+2023-02 | 23,777,334.33
+2023-03 | 28,281,910.99
+2023-04 | 28,610,011.52
+2023-05 | 29,088,913.24
+2023-06 | 31,533,363.32
+2023-07 | 30,154,416.08
+2023-08 | 33,255,790.09
+2023-09 | 28,813,822.45
+2023-10 | 32,727,503.81
+2023-11 | 36,633,033.73
+2023-12 | 35,037,485.54
+2024-01 | 27,750,338.42
+2024-02 | 28,532,508.79
+2024-03 | 35,423,117.61
+2024-04 | 35,369,074.52
+2024-05 | 40,197,856.64
+2024-06 | 41,151,475.70
+2024-07 | 46,003,884.23
+2024-08 | 47,477,142.41
+2024-09 | 47,057,603.97
+2024-10 | 49,453,244.82
+2024-11 | 51,768,864.49
+2024-12 | 58,587,610.37
+2025-01 | 48,332,228.66
+2025-02 | 50,615,444.03
+2025-03 | 65,329,531.46
+2025-04 | 63,419,479.20
+2025-05 | 66,292,902.11
+2025-06 | 73,506,446.83
+2025-07 | 72,745,663.08
+2025-08 | 70,913,159.32
+2025-09 | 68,798,724.44
+2025-10 | 65,575,508.31
+2025-11 | 77,176,792.21
+2025-12 | 76,940,978.96
+
+================================================================================
+TOTAL REVENUE BY CUSTOMER TYPE
+================================================================================
+customer_type | revenue | profit
+--------------------------------------------------------------------------------
+Wholesaler | 705,903,371.48 | 225,293,936.38
+Distributor | 610,775,808.73 | 189,590,152.13
+Supermarket | 262,920,845.36 | 92,339,272.03
+Retailer | 77,782,446.33 | 27,626,334.78
+Convenience Store | 14,014,067.85 | 5,018,456.94
+
+================================================================================
+PROFIT MARGIN BY CATEGORY
+================================================================================
+category | revenue | profit | profit_margin
+--------------------------------------------------------------------------------
+Snacks | 330,392,638.77 | 130,255,849.12 | 39.42
+Cereal | 1,341,003,900.98 | 409,612,303.14 | 30.55
+
+================================================================================
+TOTAL REVENUE BY PRODUCT
+================================================================================
+product_name | revenue
+--------------------------------------------------------------------------------
+Munchies Honey Cornflakes | 175,651,754.36
+Munchies Original Cornflakes | 168,455,241.35
+Munchies Bran Flakes | 161,145,138.29
+Munchies Chocolate Wheat Cereal | 151,337,272.00
+Munchies Original Wheat Cereal | 150,865,640.98
+Munchies Honey Bran Flakes | 149,577,191.08
+Munchies Strawberry Crunch | 133,363,834.66
+Munchies Banana Crunch | 126,768,062.14
+Munchies Chocolate Crunch | 123,839,766.12
+Munchies Chocolate Biscuits | 50,920,369.95
+Munchies Salted Peanuts | 46,073,702.73
+Munchies Potato Crisps Original | 45,450,707.82
+Munchies Honey Roasted Peanuts | 42,408,100.16
+Munchies Coconut Biscuits | 38,263,206.89
+Munchies Potato Crisps Chilli | 36,806,102.81
+Munchies Potato Crisps Cheese & Onion | 35,749,758.04
+Munchies Cream Biscuits | 34,720,690.37
+
+================================================================================
+SALES PROFIT BY MONTH
+================================================================================
+month | revenue | profit
+--------------------------------------------------------------------------------
+2023-01 | 25,063,374.07 | 8,091,480.23
+2023-02 | 23,777,334.33 | 7,697,967.00
+2023-03 | 28,281,910.99 | 9,111,347.92
+2023-04 | 28,610,011.52 | 9,120,388.72
+2023-05 | 29,088,913.24 | 9,452,182.81
+2023-06 | 31,533,363.32 | 10,236,671.18
+2023-07 | 30,154,416.08 | 9,739,132.25
+2023-08 | 33,255,790.09 | 10,744,344.80
+2023-09 | 28,813,822.45 | 9,372,532.79
+2023-10 | 32,727,503.81 | 10,551,617.75
+2023-11 | 36,633,033.73 | 11,900,030.33
+2023-12 | 35,037,485.54 | 11,304,190.35
+2024-01 | 27,750,338.42 | 9,001,023.81
+2024-02 | 28,532,508.79 | 9,237,629.27
+2024-03 | 35,423,117.61 | 11,486,879.97
+2024-04 | 35,369,074.52 | 11,531,781.03
+2024-05 | 40,197,856.64 | 12,923,872.72
+2024-06 | 41,151,475.70 | 13,353,491.61
+2024-07 | 46,003,884.23 | 14,913,687.08
+2024-08 | 47,477,142.41 | 15,335,970.16
+2024-09 | 47,057,603.97 | 15,153,815.29
+2024-10 | 49,453,244.82 | 15,860,786.78
+2024-11 | 51,768,864.49 | 16,921,485.77
+2024-12 | 58,587,610.37 | 18,952,803.35
+2025-01 | 48,332,228.66 | 15,646,290.20
+2025-02 | 50,615,444.03 | 16,234,669.36
+2025-03 | 65,329,531.46 | 21,055,982.11
+2025-04 | 63,419,479.20 | 20,454,366.59
+2025-05 | 66,292,902.11 | 21,549,782.26
+2025-06 | 73,506,446.83 | 23,578,908.37
+2025-07 | 72,745,663.08 | 23,435,166.71
+2025-08 | 70,913,159.32 | 22,864,131.76
+2025-09 | 68,798,724.44 | 22,156,842.90
+2025-10 | 65,575,508.31 | 21,143,307.16
+2025-11 | 77,176,792.21 | 24,955,743.87
+2025-12 | 76,940,978.96 | 24,797,848.00
+
+================================================================================
+TOTAL PROFIT BY SUBCATEGORY
+================================================================================
+subcategory | profit | revenue
+--------------------------------------------------------------------------------
+Crunch | 116,148,654.87 | 383,971,662.92
+Cornflakes | 107,789,447.48 | 344,106,995.71
+Bran Flakes | 96,160,914.19 | 310,722,329.37
+Wheat Cereal | 89,513,286.60 | 302,202,912.98
+Potato Crisps | 48,121,780.52 | 118,006,568.67
+Biscuits | 47,298,399.00 | 123,904,267.21
+Peanuts | 34,835,669.60 | 88,481,802.89
+
+================================================================================
+PRODUCT PERFORMANCE
+================================================================================
+product_name | category | subcategory | units_sold | revenue | cost_of_goods | gross_profit | profit_margin
+--------------------------------------------------------------------------------
+Munchies Honey Cornflakes | Cereal | Cornflakes | 3,502,496.00 | 175,651,754.36 | 125,940,526.55 | 54,326,165.19 | 30.93
+Munchies Original Cornflakes | Cereal | Cornflakes | 3,827,553.00 | 168,455,241.35 | 120,028,695.75 | 53,463,282.29 | 31.74
+Munchies Bran Flakes | Cereal | Bran Flakes | 3,362,302.00 | 161,145,138.29 | 115,187,264.24 | 50,189,770.25 | 31.15
+Munchies Chocolate Wheat Cereal | Cereal | Wheat Cereal | 2,673,689.00 | 151,337,272.00 | 108,801,026.88 | 46,384,509.70 | 30.65
+Munchies Original Wheat Cereal | Cereal | Wheat Cereal | 3,073,132.00 | 150,865,640.98 | 112,394,706.72 | 43,128,776.90 | 28.59
+Munchies Honey Bran Flakes | Cereal | Bran Flakes | 2,755,714.00 | 149,577,191.08 | 107,705,084.95 | 45,971,143.94 | 30.73
+Munchies Strawberry Crunch | Cereal | Crunch | 2,274,536.00 | 133,363,834.66 | 96,729,797.34 | 40,541,058.07 | 30.40
+Munchies Banana Crunch | Cereal | Crunch | 2,205,594.00 | 126,768,062.14 | 92,407,648.61 | 37,797,191.84 | 29.82
+Munchies Chocolate Crunch | Cereal | Crunch | 2,043,673.00 | 123,839,766.12 | 90,772,741.06 | 37,810,404.96 | 30.53
+Munchies Chocolate Biscuits | Snacks | Biscuits | 2,880,827.00 | 50,920,369.95 | 32,720,847.80 | 19,590,032.19 | 38.47
+Munchies Salted Peanuts | Snacks | Peanuts | 2,817,494.00 | 46,073,702.73 | 28,892,711.50 | 18,384,603.50 | 39.90
+Munchies Potato Crisps Original | Snacks | Potato Crisps | 3,324,593.00 | 45,450,707.82 | 28,065,799.39 | 18,506,680.59 | 40.72
+Munchies Honey Roasted Peanuts | Snacks | Peanuts | 2,156,087.00 | 42,408,100.16 | 26,864,446.07 | 16,451,066.10 | 38.79
+Munchies Coconut Biscuits | Snacks | Biscuits | 2,280,047.00 | 38,263,206.89 | 24,759,975.95 | 14,522,804.63 | 37.96
+Munchies Potato Crisps Chilli | Snacks | Potato Crisps | 2,474,294.00 | 36,806,102.81 | 22,632,646.82 | 15,277,816.07 | 41.51
+Munchies Potato Crisps Cheese & Onion | Snacks | Potato Crisps | 2,328,878.00 | 35,749,758.04 | 22,476,002.04 | 14,337,283.86 | 40.10
+Munchies Cream Biscuits | Snacks | Biscuits | 1,906,835.00 | 34,720,690.37 | 22,406,940.50 | 13,185,562.18 | 37.98
+
+================================================================================
+REVENUE BY CATEGORY AND SUBCATEGORY
+================================================================================
+category | subcategory | revenue | profit
+--------------------------------------------------------------------------------
+Cereal | Crunch | 383,971,662.92 | 116,148,654.87
+Cereal | Cornflakes | 344,106,995.71 | 107,789,447.48
+Cereal | Bran Flakes | 310,722,329.37 | 96,160,914.19
+Cereal | Wheat Cereal | 302,202,912.98 | 89,513,286.60
+Snacks | Biscuits | 123,904,267.21 | 47,298,399.00
+Snacks | Potato Crisps | 118,006,568.67 | 48,121,780.52
+Snacks | Peanuts | 88,481,802.89 | 34,835,669.60
+
+================================================================================
+CUSTOMER REVENUE ANALYSIS
+================================================================================
+customer_type | customers | revenue | profit | units_sold
+--------------------------------------------------------------------------------
+Wholesaler | 20 | 705,903,371.48 | 225,293,936.38 | 19,387,597.00
+Distributor | 12 | 610,775,808.73 | 189,590,152.13 | 17,160,203.00
+Supermarket | 18 | 262,920,845.36 | 92,339,272.03 | 6,935,236.00
+Retailer | 45 | 77,782,446.33 | 27,626,334.78 | 2,037,034.00
+Convenience Store | 32 | 14,014,067.85 | 5,018,456.94 | 367,674.00
+
+================================================================================
+REVENUE BY CITY
+================================================================================
+city | revenue | profit | customers
+--------------------------------------------------------------------------------
+Kafue | 366,515,393.42 | 117,200,291.54 | 17
+Lusaka | 257,837,298.37 | 83,081,924.28 | 20
+Kapiri Mposhi | 123,129,556.02 | 39,142,445.83 | 11
+Mufulira | 116,440,209.39 | 38,584,292.11 | 9
+Mbala | 100,721,656.32 | 32,240,379.24 | 3
+Chingola | 96,360,498.70 | 30,450,590.50 | 7
+Kitwe | 89,022,563.82 | 29,131,043.13 | 6
+Choma | 83,397,151.99 | 26,979,519.03 | 5
+Ndola | 72,063,437.80 | 24,156,646.34 | 8
+Kabwe | 53,318,719.74 | 16,484,321.41 | 4
+Mkushi | 53,003,208.55 | 17,427,404.50 | 4
+Mazabuka | 48,671,032.73 | 15,988,343.90 | 2
+Katete | 46,298,122.06 | 14,562,833.65 | 2
+Chilanga | 45,169,362.95 | 15,892,559.34 | 14
+Kasama | 38,926,761.96 | 12,406,701.24 | 3
+Senanga | 35,738,605.89 | 11,508,337.17 | 2
+Livingstone | 35,473,749.09 | 11,308,723.33 | 1
+Samfya | 4,056,051.45 | 1,439,585.42 | 3
+Petauke | 3,429,129.59 | 1,227,231.29 | 2
+Mwinilunga | 989,695.09 | 353,311.94 | 2
+Chipata | 420,615.61 | 151,636.66 | 1
+Solwezi | 413,719.21 | 150,030.41 | 1
+
+================================================================================
+REVENUE BY REGION
+================================================================================
+region | revenue | profit | customers
+--------------------------------------------------------------------------------
+Lusaka | 669,522,054.74 | 216,174,775.16 | 51
+Copperbelt | 373,886,709.71 | 122,322,572.08 | 30
+Central | 229,451,484.31 | 73,054,171.74 | 19
+Southern | 167,541,933.81 | 54,276,586.26 | 8
+Northern | 139,648,418.28 | 44,647,080.48 | 6
+Eastern | 50,147,867.26 | 15,941,701.60 | 5
+Western | 35,738,605.89 | 11,508,337.17 | 2
+Luapula | 4,056,051.45 | 1,439,585.42 | 3
+North-Western | 1,403,414.30 | 503,342.35 | 3
+
+================================================================================
+CUSTOMER REVENUE DISTRIBUTION
+================================================================================
+customer_id | customer_name | customer_type | city | region | revenue | profit
+--------------------------------------------------------------------------------
+CUST042 | Mwamba Distributors | Distributor | Kafue | Lusaka | 53,302,615.72 | 16,551,675.86
+CUST049 | Chingola Southern Cross Distribution Services | Distributor | Chingola | Copperbelt | 53,182,041.49 | 16,516,636.52
+CUST046 | Blue Ribbon Distributors | Distributor | Lusaka | Lusaka | 53,095,985.33 | 16,590,153.00
+CUST043 | Kafue Kabwe Distributors | Distributor | Kafue | Lusaka | 52,444,098.63 | 16,269,061.46
+CUST050 | Eastgate Trading | Distributor | Kabwe | Central | 51,904,291.10 | 15,978,131.89
+CUST048 | Golden Distribution Services | Distributor | Choma | Southern | 51,639,027.33 | 15,825,461.18
+CUST039 | Parkview Distribution Services | Distributor | Lusaka | Lusaka | 51,192,032.47 | 15,754,368.08
+CUST045 | Mosi Food Distributors | Distributor | Kapiri Mposhi | Central | 50,926,188.12 | 15,793,006.54
+CUST044 | New Horizon Distribution Services | Distributor | Kafue | Lusaka | 50,174,132.06 | 15,691,099.82
+CUST047 | Kafue Green Valley Food Distributors | Distributor | Kafue | Lusaka | 49,276,896.66 | 15,497,839.52
+CUST040 | Zambezi Food Distributors | Distributor | Kapiri Mposhi | Central | 49,108,239.34 | 15,190,109.99
+CUST041 | Bright Star Distributors | Distributor | Katete | Eastern | 44,530,260.48 | 13,932,608.27
+CUST038 | Bwalya Cash & Carry | Wholesaler | Kafue | Lusaka | 37,309,784.78 | 11,927,140.97
+CUST037 | Chingola Mukuba Merchants | Wholesaler | Chingola | Copperbelt | 37,124,413.21 | 11,779,586.75
+CUST023 | Golden Cash & Carry | Wholesaler | Lusaka | Lusaka | 37,097,857.77 | 11,869,262.32
+CUST032 | Kamwala Cash & Carry | Wholesaler | Lusaka | Lusaka | 37,008,835.71 | 11,808,134.88
+CUST022 | Kabwe Wholesale Traders | Wholesaler | Kasama | Northern | 36,740,002.58 | 11,625,944.39
+CUST021 | Zambezi Cash & Carry | Wholesaler | Kafue | Lusaka | 36,568,276.34 | 11,549,019.92
+CUST028 | Kitwe New Horizon Merchants | Wholesaler | Kitwe | Copperbelt | 36,167,973.31 | 11,612,880.58
+CUST031 | Mosi Wholesale | Wholesaler | Mufulira | Copperbelt | 35,941,028.91 | 11,467,983.27
+CUST030 | Mosi Merchants | Wholesaler | Mkushi | Central | 35,664,907.93 | 11,347,364.52
+CUST033 | Livingstone Kabwe Wholesale | Wholesaler | Livingstone | Southern | 35,473,749.09 | 11,308,723.33
+CUST024 | Chanda Merchants | Wholesaler | Mufulira | Copperbelt | 35,361,143.74 | 11,234,848.26
+CUST026 | Sunrise Merchants | Wholesaler | Ndola | Copperbelt | 35,234,841.40 | 11,227,477.92
+CUST029 | Mbala Bright Star Wholesale | Wholesaler | Mbala | Northern | 34,917,912.11 | 11,111,255.73
+CUST020 | Kafue Kafue Cash & Carry | Wholesaler | Kafue | Lusaka | 34,302,459.99 | 11,006,608.94
+CUST034 | Riverside Cash & Carry | Wholesaler | Senanga | Western | 34,142,654.66 | 10,940,804.82
+CUST035 | Mazabuka Lusaka Wholesale Traders | Wholesaler | Mazabuka | Southern | 34,109,759.87 | 10,848,688.06
+CUST027 | Chilanga Merchants | Wholesaler | Kitwe | Copperbelt | 33,918,687.38 | 10,868,038.34
+CUST019 | Mbala Southern Cross Wholesale Traders | Wholesaler | Mbala | Northern | 33,597,776.60 | 10,782,119.82
+CUST036 | Prime Cash & Carry | Wholesaler | Lusaka | Lusaka | 33,015,338.49 | 10,631,049.87
+CUST025 | Bright Star Wholesale Traders | Wholesaler | Mbala | Northern | 32,205,967.61 | 10,347,003.69
+CUST009 | Blue Ribbon Grocers | Supermarket | Kafue | Lusaka | 15,463,400.70 | 5,419,109.26
+CUST008 | Chanda Grocers | Supermarket | Ndola | Copperbelt | 15,324,430.99 | 5,334,032.44
+CUST013 | Kapiri Mposhi Parkview Supermarket | Supermarket | Kapiri Mposhi | Central | 15,271,998.55 | 5,370,801.00
+CUST005 | Kamwala Supermarket | Supermarket | Mkushi | Central | 15,258,096.35 | 5,336,952.80
+CUST014 | Metro Supermarket | Supermarket | Chilanga | Lusaka | 15,112,934.11 | 5,288,871.05
+CUST004 | Mukuba Supermarket | Supermarket | Kitwe | Copperbelt | 14,927,432.20 | 5,232,144.75
+CUST006 | Pioneer Supermarket | Supermarket | Kafue | Lusaka | 14,905,423.29 | 5,249,037.60
+CUST015 | Choma Mosi Cash & Carry | Supermarket | Choma | Southern | 14,857,072.65 | 5,227,902.35
+CUST012 | Golden Grocers | Supermarket | Mazabuka | Southern | 14,561,272.86 | 5,139,655.84
+CUST002 | Choma Great North Cash & Carry | Supermarket | Choma | Southern | 14,511,212.33 | 5,076,695.48
+CUST017 | Freshland Cash & Carry | Supermarket | Lusaka | Lusaka | 14,477,167.91 | 5,086,360.85
+CUST001 | Blue Ribbon Supermarket | Supermarket | Kafue | Lusaka | 14,410,594.26 | 5,061,800.15
+CUST016 | Ndola Blue Ribbon Foods | Supermarket | Ndola | Copperbelt | 14,325,461.61 | 5,038,653.69
+CUST018 | Riverside Supermarket | Supermarket | Chilanga | Lusaka | 14,227,909.32 | 4,997,994.90
+CUST007 | Mulenga Supermarket | Supermarket | Mufulira | Copperbelt | 14,069,396.01 | 4,953,176.57
+CUST011 | Unity Supermarket | Supermarket | Mufulira | Copperbelt | 14,021,797.02 | 4,933,795.11
+CUST003 | Eastgate Cash & Carry | Supermarket | Mufulira | Copperbelt | 14,013,471.71 | 4,915,908.96
+CUST010 | Bwalya Grocers | Supermarket | Lusaka | Lusaka | 13,181,773.49 | 4,676,379.23
+CUST086 | Kafue Enterprises | Retailer | Lusaka | Lusaka | 1,959,619.83 | 688,045.60
+CUST072 | Chilanga Retailers | Retailer | Kafue | Lusaka | 1,948,165.40 | 693,007.98
+CUST084 | Mwamba Grocers | Retailer | Chilanga | Lusaka | 1,932,459.16 | 677,704.40
+CUST065 | Choma Emerald Enterprises | Retailer | Choma | Southern | 1,906,370.29 | 676,667.94
+CUST093 | Manda Stores | Retailer | Lusaka | Lusaka | 1,885,636.93 | 666,071.31
+CUST085 | Chilanga Mulenga General Dealers | Retailer | Chilanga | Lusaka | 1,872,159.93 | 662,392.33
+CUST092 | Kitwe Green Valley Retailers | Retailer | Kitwe | Copperbelt | 1,865,561.99 | 657,617.58
+CUST062 | Eastgate Enterprises | Retailer | Chilanga | Lusaka | 1,864,730.08 | 658,171.15
+CUST081 | Emerald Enterprises | Retailer | Lusaka | Lusaka | 1,860,643.83 | 658,048.68
+CUST058 | Riverside Retailers | Retailer | Samfya | Luapula | 1,848,681.93 | 654,815.61
+CUST071 | Petauke Kamwala Retailers | Retailer | Petauke | Eastern | 1,847,550.39 | 658,306.22
+CUST052 | Unity Stores | Retailer | Ndola | Copperbelt | 1,838,354.88 | 654,560.12
+CUST091 | Lusaka Kafue Enterprises | Retailer | Lusaka | Lusaka | 1,838,309.13 | 649,597.70
+CUST090 | Riverside Stores | Retailer | Chilanga | Lusaka | 1,819,424.24 | 635,735.44
+CUST095 | Manda Grocers | Retailer | Kafue | Lusaka | 1,785,520.75 | 637,393.80
+CUST077 | Kabwe Enterprises | Retailer | Chingola | Copperbelt | 1,773,777.72 | 634,471.46
+CUST075 | Golden Stores | Retailer | Katete | Eastern | 1,767,861.58 | 630,225.38
+CUST063 | Emerald Stores | Retailer | Kitwe | Copperbelt | 1,762,713.00 | 624,043.20
+CUST079 | Chanda General Dealers | Retailer | Kasama | Northern | 1,758,868.86 | 627,878.03
+CUST094 | Emerald General Dealers | Retailer | Lusaka | Lusaka | 1,727,148.42 | 610,244.88
+CUST055 | Kapiri Mposhi Metro Enterprises | Retailer | Kapiri Mposhi | Central | 1,726,789.54 | 613,761.05
+CUST051 | Lusaka Stores | Retailer | Chilanga | Lusaka | 1,722,172.39 | 618,314.08
+CUST089 | Grand General Dealers | Retailer | Lusaka | Lusaka | 1,717,911.52 | 615,028.11
+CUST088 | Great North Retailers | Retailer | Lusaka | Lusaka | 1,702,862.87 | 607,405.59
+CUST056 | Capital Stores | Retailer | Lusaka | Lusaka | 1,702,203.57 | 604,473.91
+CUST073 | Lusaka Enterprises | Retailer | Samfya | Luapula | 1,692,039.74 | 600,900.25
+CUST074 | Chingola Bwalya Enterprises | Retailer | Chingola | Copperbelt | 1,691,636.66 | 598,239.63
+CUST054 | Victory General Dealers | Retailer | Mufulira | Copperbelt | 1,686,880.96 | 597,368.91
+CUST087 | Southern Cross Retailers | Retailer | Chingola | Copperbelt | 1,686,744.85 | 599,356.62
+CUST070 | Bwalya Retailers | Retailer | Ndola | Copperbelt | 1,683,188.64 | 599,359.92
+CUST080 | Chilanga Zambezi Grocers | Retailer | Chilanga | Lusaka | 1,669,559.77 | 594,434.29
+CUST061 | Manda Retailers | Retailer | Chilanga | Lusaka | 1,667,261.93 | 588,958.65
+CUST083 | Freshland General Dealers | Retailer | Kafue | Lusaka | 1,663,936.24 | 592,429.27
+CUST053 | Ndola Metro Stores | Retailer | Ndola | Copperbelt | 1,663,629.57 | 591,082.57
+CUST059 | Mkushi Capital General Dealers | Retailer | Mkushi | Central | 1,647,783.23 | 587,680.76
+CUST076 | Unity Retailers | Retailer | Kafue | Lusaka | 1,644,393.03 | 584,904.29
+CUST057 | Kapiri Mposhi Emerald Stores | Retailer | Kapiri Mposhi | Central | 1,619,770.47 | 570,511.07
+CUST060 | Central Enterprises | Retailer | Chilanga | Lusaka | 1,603,468.83 | 571,240.27
+CUST067 | Mwamba Enterprises | Retailer | Senanga | Western | 1,595,951.23 | 567,532.35
+CUST066 | Copperbelt General Dealers | Retailer | Kapiri Mposhi | Central | 1,583,477.06 | 565,207.40
+CUST064 | Kamwala Retailers | Retailer | Petauke | Eastern | 1,581,579.20 | 568,925.07
+CUST082 | Chilanga Enterprises | Retailer | Lusaka | Lusaka | 1,539,370.49 | 552,074.41
+CUST078 | Kamwala Grocers | Retailer | Lusaka | Lusaka | 1,523,094.80 | 545,689.16
+CUST068 | Blue Ribbon Retailers | Retailer | Ndola | Copperbelt | 1,513,515.68 | 539,371.39
+CUST069 | Parkview Grocers | Retailer | Kapiri Mposhi | Central | 1,389,665.72 | 497,086.95
+CUST124 | Mwamba Convenience Store | Convenience Store | Mufulira | Copperbelt | 520,239.94 | 184,485.03
+CUST106 | Capital Grocers | Convenience Store | Samfya | Luapula | 515,329.78 | 183,869.56
+CUST115 | Mwinilunga Freshland Mini Mart | Convenience Store | Mwinilunga | North-Western | 496,817.51 | 178,270.38
+CUST109 | Victory Mini Mart | Convenience Store | Mwinilunga | North-Western | 492,877.58 | 175,041.56
+CUST099 | Kabwe Southern Cross Stores | Convenience Store | Kabwe | Central | 490,906.29 | 175,999.10
+CUST100 | Choma Bwalya Convenience Store | Convenience Store | Choma | Southern | 483,469.39 | 172,792.08
+CUST122 | Central Stores | Convenience Store | Ndola | Copperbelt | 480,015.03 | 172,108.29
+CUST113 | Chilanga General Dealers | Convenience Store | Chilanga | Lusaka | 476,058.45 | 168,607.87
+CUST102 | Kabwe Golden Mini Mart | Convenience Store | Kabwe | Central | 472,559.91 | 170,081.16
+CUST121 | Lusaka Mosi Mini Mart | Convenience Store | Lusaka | Lusaka | 465,619.92 | 164,876.59
+CUST114 | Lusaka General Dealers | Convenience Store | Chilanga | Lusaka | 460,295.94 | 165,113.45
+CUST123 | Mwamba Stores | Convenience Store | Chingola | Copperbelt | 455,283.94 | 162,559.18
+CUST098 | Green Valley Mini Mart | Convenience Store | Kabwe | Central | 450,962.44 | 160,109.26
+CUST103 | Metro Stores | Convenience Store | Chingola | Copperbelt | 446,600.83 | 159,740.34
+CUST101 | Pioneer Grocers | Convenience Store | Kafue | Lusaka | 445,214.26 | 158,286.78
+CUST112 | Kafue Zambezi Convenience Store | Convenience Store | Kafue | Lusaka | 438,457.91 | 156,893.38
+CUST110 | Mukuba General Dealers | Convenience Store | Lusaka | Lusaka | 434,459.28 | 156,097.76
+CUST096 | Metro Mini Mart | Convenience Store | Mkushi | Central | 432,421.04 | 155,406.42
+CUST105 | Kamwala Mini Mart | Convenience Store | Kafue | Lusaka | 432,023.40 | 154,982.54
+CUST116 | Grand Convenience Store | Convenience Store | Kasama | Northern | 427,890.52 | 152,878.82
+CUST111 | Golden Convenience Store | Convenience Store | Mufulira | Copperbelt | 423,996.02 | 152,198.99
+CUST125 | Lusaka Convenience Store | Convenience Store | Chipata | Eastern | 420,615.61 | 151,636.66
+CUST118 | Solwezi Sunrise Grocers | Convenience Store | Solwezi | North-Western | 413,719.21 | 150,030.41
+CUST097 | Lusaka Green Valley Stores | Convenience Store | Lusaka | Lusaka | 411,426.61 | 148,562.35
+CUST126 | Unity General Dealers | Convenience Store | Kapiri Mposhi | Central | 406,121.13 | 145,350.48
+CUST117 | Emerald Mini Mart | Convenience Store | Mufulira | Copperbelt | 402,255.08 | 144,527.01
+CUST108 | New Horizon Convenience Store | Convenience Store | Kapiri Mposhi | Central | 400,748.94 | 144,592.79
+CUST104 | Kabwe General Dealers | Convenience Store | Chilanga | Lusaka | 390,960.23 | 139,732.94
+CUST127 | Golden General Dealers | Convenience Store | Kitwe | Copperbelt | 380,195.94 | 136,318.68
+CUST119 | Green Valley Convenience Store | Convenience Store | Kapiri Mposhi | Central | 353,234.14 | 128,145.06
+CUST107 | Prime Grocers | Convenience Store | Chilanga | Lusaka | 349,968.57 | 125,288.52
+CUST120 | Bright Star Stores | Convenience Store | Kapiri Mposhi | Central | 343,323.01 | 123,873.50
+
+================================================================================
+PLANNED VS ACTUAL PRODUCTION BY YEAR
+================================================================================
+year | planned_production | actual_production | production_variance | production_achievement_rate
+--------------------------------------------------------------------------------
+2,023 | 29,445,937.00 | 27,951,614.00 | -1,494,323.00 | 94.93
+2,024 | 29,367,809.00 | 27,901,690.00 | -1,466,119.00 | 95.01
+2,025 | 29,125,499.00 | 27,660,332.00 | -1,465,167.00 | 94.97
+
+================================================================================
+ACTUAL PRODUCTION BY FACTORY
+================================================================================
+factory_name | actual_production | planned_production | rejected_units | downtime_hours | production_cost
+--------------------------------------------------------------------------------
+Munchies Lusaka Factory | 42,246,791.00 | 44,484,214.00 | 405,795.00 | 5,494.97 | 1,163,568,834.63
+Munchies Central Factory | 24,805,781.00 | 26,103,903.00 | 236,558.00 | 3,316.35 | 681,434,659.72
+Munchies Copperbelt Factory | 16,461,064.00 | 17,351,128.00 | 156,697.00 | 2,165.50 | 453,965,513.14
+
+================================================================================
+DOWNTIME TREND
+================================================================================
+year | month | period | downtime_hours
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 279.60
+2,023 | 2 | 2023-02 | 288.30
+2,023 | 3 | 2023-03 | 301.79
+2,023 | 4 | 2023-04 | 314.87
+2,023 | 5 | 2023-05 | 307.36
+2,023 | 6 | 2023-06 | 300.61
+2,023 | 7 | 2023-07 | 287.94
+2,023 | 8 | 2023-08 | 332.12
+2,023 | 9 | 2023-09 | 324.01
+2,023 | 10 | 2023-10 | 299.58
+2,023 | 11 | 2023-11 | 273.62
+2,023 | 12 | 2023-12 | 291.65
+2,024 | 1 | 2024-01 | 267.22
+2,024 | 2 | 2024-02 | 321.73
+2,024 | 3 | 2024-03 | 292.38
+2,024 | 4 | 2024-04 | 290.83
+2,024 | 5 | 2024-05 | 290.22
+2,024 | 6 | 2024-06 | 306.54
+2,024 | 7 | 2024-07 | 319.90
+2,024 | 8 | 2024-08 | 298.80
+2,024 | 9 | 2024-09 | 322.38
+2,024 | 10 | 2024-10 | 330.72
+2,024 | 11 | 2024-11 | 315.17
+2,024 | 12 | 2024-12 | 249.32
+2,025 | 1 | 2025-01 | 369.91
+2,025 | 2 | 2025-02 | 279.77
+2,025 | 3 | 2025-03 | 304.55
+2,025 | 4 | 2025-04 | 332.85
+2,025 | 5 | 2025-05 | 293.73
+2,025 | 6 | 2025-06 | 320.88
+2,025 | 7 | 2025-07 | 363.49
+2,025 | 8 | 2025-08 | 283.96
+2,025 | 9 | 2025-09 | 310.89
+2,025 | 10 | 2025-10 | 305.79
+2,025 | 11 | 2025-11 | 288.11
+2,025 | 12 | 2025-12 | 316.23
+
+================================================================================
+ACTUAL PRODUCTION BY PRODUCT
+================================================================================
+product_name | category | actual_production | planned_production | rejected_units
+--------------------------------------------------------------------------------
+Munchies Original Cornflakes | Cereal | 7,660,476.00 | 8,084,482.00 | 72,292.00
+Munchies Honey Cornflakes | Cereal | 7,250,604.00 | 7,632,595.00 | 71,519.00
+Munchies Bran Flakes | Cereal | 6,710,092.00 | 7,060,619.00 | 65,110.00
+Munchies Original Wheat Cereal | Cereal | 6,290,173.00 | 6,641,655.00 | 62,258.00
+Munchies Potato Crisps Original | Snacks | 5,586,784.00 | 5,873,332.00 | 53,755.00
+Munchies Chocolate Wheat Cereal | Cereal | 5,404,941.00 | 5,677,128.00 | 53,673.00
+Munchies Honey Bran Flakes | Cereal | 5,337,070.00 | 5,616,864.00 | 47,784.00
+Munchies Chocolate Biscuits | Snacks | 4,583,031.00 | 4,807,837.00 | 42,875.00
+Munchies Strawberry Crunch | Cereal | 4,529,553.00 | 4,761,619.00 | 43,000.00
+Munchies Salted Peanuts | Snacks | 4,453,975.00 | 4,707,942.00 | 44,536.00
+Munchies Banana Crunch | Cereal | 4,308,873.00 | 4,538,049.00 | 38,652.00
+Munchies Potato Crisps Cheese & Onion | Snacks | 3,872,096.00 | 4,085,801.00 | 36,575.00
+Munchies Potato Crisps Chilli | Snacks | 3,802,593.00 | 3,984,416.00 | 35,820.00
+Munchies Chocolate Crunch | Cereal | 3,801,168.00 | 4,024,452.00 | 35,578.00
+Munchies Coconut Biscuits | Snacks | 3,496,391.00 | 3,668,643.00 | 34,142.00
+Munchies Honey Roasted Peanuts | Snacks | 3,264,698.00 | 3,439,019.00 | 31,655.00
+Munchies Cream Biscuits | Snacks | 3,161,118.00 | 3,334,792.00 | 29,826.00
+
+================================================================================
+REJECTION RATE BY PRODUCT
+================================================================================
+product_name | produced_quantity | rejected_quantity | rejection_rate
+--------------------------------------------------------------------------------
+Munchies Salted Peanuts | 4,453,975.00 | 44,536.00 | 1.00
+Munchies Chocolate Wheat Cereal | 5,404,941.00 | 53,673.00 | 0.99
+Munchies Original Wheat Cereal | 6,290,173.00 | 62,258.00 | 0.99
+Munchies Honey Cornflakes | 7,250,604.00 | 71,519.00 | 0.99
+Munchies Coconut Biscuits | 3,496,391.00 | 34,142.00 | 0.98
+Munchies Bran Flakes | 6,710,092.00 | 65,110.00 | 0.97
+Munchies Honey Roasted Peanuts | 3,264,698.00 | 31,655.00 | 0.97
+Munchies Potato Crisps Original | 5,586,784.00 | 53,755.00 | 0.96
+Munchies Strawberry Crunch | 4,529,553.00 | 43,000.00 | 0.95
+Munchies Potato Crisps Cheese & Onion | 3,872,096.00 | 36,575.00 | 0.94
+Munchies Original Cornflakes | 7,660,476.00 | 72,292.00 | 0.94
+Munchies Cream Biscuits | 3,161,118.00 | 29,826.00 | 0.94
+Munchies Potato Crisps Chilli | 3,802,593.00 | 35,820.00 | 0.94
+Munchies Chocolate Crunch | 3,801,168.00 | 35,578.00 | 0.94
+Munchies Chocolate Biscuits | 4,583,031.00 | 42,875.00 | 0.94
+Munchies Banana Crunch | 4,308,873.00 | 38,652.00 | 0.90
+Munchies Honey Bran Flakes | 5,337,070.00 | 47,784.00 | 0.90
+
+================================================================================
+PRODUCTION COST
+================================================================================
+year | production_cost | produced_quantity | cost_per_unit
+--------------------------------------------------------------------------------
+2,023 | 767,498,008.52 | 27,951,614.00 | 27.46
+2,024 | 770,652,937.24 | 27,901,690.00 | 27.62
+2,025 | 760,818,061.73 | 27,660,332.00 | 27.51
+
+================================================================================
+STOCK VALUE BY WAREHOUSE
+================================================================================
+warehouse_name | warehouse_type | warehouse_city | stock_value | closing_stock | damaged_units
+--------------------------------------------------------------------------------
+Lusaka Central Warehouse | Distribution Warehouse | Lusaka | 8,862,734,897.40 | 327,717,765.00 | 2,104,040.00
+Copperbelt Distribution Warehouse | Distribution Warehouse | Ndola | 4,297,174,403.40 | 159,478,272.00 | 1,028,788.00
+Southern Distribution Warehouse | Distribution Warehouse | Choma | 1,735,572,448.10 | 63,900,326.00 | 404,703.00
+Northern Distribution Warehouse | Distribution Warehouse | Kasama | 1,035,161,987.50 | 38,717,283.00 | 251,119.00
+
+================================================================================
+WAREHOUSE BY PRODUCT
+================================================================================
+warehouse_name | product_name | closing_stock | stock_value | damaged_units
+--------------------------------------------------------------------------------
+Copperbelt Distribution Warehouse | Munchies Honey Cornflakes | 14,035,784.00 | 502,481,067.20 | 100,122.00
+Copperbelt Distribution Warehouse | Munchies Original Wheat Cereal | 12,905,686.00 | 469,766,970.40 | 88,259.00
+Copperbelt Distribution Warehouse | Munchies Bran Flakes | 13,551,007.00 | 462,089,338.70 | 95,111.00
+Copperbelt Distribution Warehouse | Munchies Original Cornflakes | 13,850,459.00 | 432,134,320.80 | 125,085.00
+Copperbelt Distribution Warehouse | Munchies Chocolate Wheat Cereal | 10,386,722.00 | 420,662,241.00 | 60,260.00
+Copperbelt Distribution Warehouse | Munchies Honey Bran Flakes | 10,604,390.00 | 412,510,771.00 | 63,837.00
+Copperbelt Distribution Warehouse | Munchies Strawberry Crunch | 8,106,845.00 | 342,919,543.50 | 40,657.00
+Copperbelt Distribution Warehouse | Munchies Banana Crunch | 7,787,435.00 | 324,736,039.50 | 41,544.00
+Copperbelt Distribution Warehouse | Munchies Chocolate Crunch | 6,782,737.00 | 299,796,975.40 | 35,484.00
+Copperbelt Distribution Warehouse | Munchies Chocolate Biscuits | 9,142,089.00 | 103,305,605.70 | 59,827.00
+Copperbelt Distribution Warehouse | Munchies Salted Peanuts | 9,053,722.00 | 92,347,964.40 | 60,101.00
+Copperbelt Distribution Warehouse | Munchies Potato Crisps Original | 10,915,679.00 | 91,691,703.60 | 82,132.00
+Copperbelt Distribution Warehouse | Munchies Honey Roasted Peanuts | 5,766,958.00 | 71,510,279.20 | 28,683.00
+Copperbelt Distribution Warehouse | Munchies Potato Crisps Chilli | 7,698,325.00 | 70,054,757.50 | 46,497.00
+Copperbelt Distribution Warehouse | Munchies Cream Biscuits | 5,893,775.00 | 68,957,167.50 | 31,492.00
+Copperbelt Distribution Warehouse | Munchies Coconut Biscuits | 6,201,443.00 | 66,975,584.40 | 32,040.00
+Copperbelt Distribution Warehouse | Munchies Potato Crisps Cheese & Onion | 6,795,216.00 | 65,234,073.60 | 37,657.00
+Lusaka Central Warehouse | Munchies Honey Cornflakes | 26,993,442.00 | 966,365,223.60 | 205,884.00
+Lusaka Central Warehouse | Munchies Original Wheat Cereal | 25,709,498.00 | 935,825,727.20 | 175,022.00
+Lusaka Central Warehouse | Munchies Bran Flakes | 26,342,993.00 | 898,296,061.30 | 185,886.00
+Lusaka Central Warehouse | Munchies Chocolate Wheat Cereal | 21,754,397.00 | 881,053,078.50 | 127,054.00
+Lusaka Central Warehouse | Munchies Honey Bran Flakes | 21,922,743.00 | 852,794,702.70 | 134,686.00
+Lusaka Central Warehouse | Munchies Original Cornflakes | 27,193,849.00 | 848,448,088.80 | 257,088.00
+Lusaka Central Warehouse | Munchies Strawberry Crunch | 18,719,548.00 | 791,836,880.40 | 94,391.00
+Lusaka Central Warehouse | Munchies Banana Crunch | 16,749,644.00 | 698,460,154.80 | 82,659.00
+Lusaka Central Warehouse | Munchies Chocolate Crunch | 15,477,752.00 | 684,116,638.40 | 78,838.00
+Lusaka Central Warehouse | Munchies Chocolate Biscuits | 18,436,355.00 | 208,330,811.50 | 129,286.00
+Lusaka Central Warehouse | Munchies Salted Peanuts | 17,673,411.00 | 180,268,792.20 | 115,393.00
+Lusaka Central Warehouse | Munchies Potato Crisps Original | 21,058,857.00 | 176,894,398.80 | 142,500.00
+Lusaka Central Warehouse | Munchies Cream Biscuits | 13,201,873.00 | 154,461,914.10 | 64,364.00
+Lusaka Central Warehouse | Munchies Honey Roasted Peanuts | 12,428,068.00 | 154,108,043.20 | 64,561.00
+Lusaka Central Warehouse | Munchies Potato Crisps Cheese & Onion | 15,506,214.00 | 148,859,654.40 | 81,119.00
+Lusaka Central Warehouse | Munchies Coconut Biscuits | 13,422,192.00 | 144,959,673.60 | 70,819.00
+Lusaka Central Warehouse | Munchies Potato Crisps Chilli | 15,126,929.00 | 137,655,053.90 | 94,490.00
+Northern Distribution Warehouse | Munchies Honey Cornflakes | 3,725,014.00 | 133,355,501.20 | 29,227.00
+Northern Distribution Warehouse | Munchies Bran Flakes | 3,164,559.00 | 107,911,461.90 | 21,533.00
+Northern Distribution Warehouse | Munchies Original Cornflakes | 3,365,428.00 | 105,001,353.60 | 28,266.00
+Northern Distribution Warehouse | Munchies Original Wheat Cereal | 2,828,522.00 | 102,958,200.80 | 17,689.00
+Northern Distribution Warehouse | Munchies Chocolate Wheat Cereal | 2,536,595.00 | 102,732,097.50 | 14,390.00
+Northern Distribution Warehouse | Munchies Honey Bran Flakes | 2,317,137.00 | 90,136,629.30 | 13,346.00
+Northern Distribution Warehouse | Munchies Strawberry Crunch | 2,044,485.00 | 86,481,715.50 | 10,079.00
+Northern Distribution Warehouse | Munchies Banana Crunch | 1,965,374.00 | 81,956,095.80 | 9,286.00
+Northern Distribution Warehouse | Munchies Chocolate Crunch | 1,558,169.00 | 68,871,069.80 | 8,013.00
+Northern Distribution Warehouse | Munchies Chocolate Biscuits | 2,155,826.00 | 24,360,833.80 | 17,619.00
+Northern Distribution Warehouse | Munchies Potato Crisps Original | 2,829,866.00 | 23,770,874.40 | 23,012.00
+Northern Distribution Warehouse | Munchies Salted Peanuts | 1,938,123.00 | 19,768,854.60 | 12,299.00
+Northern Distribution Warehouse | Munchies Coconut Biscuits | 1,806,446.00 | 19,509,616.80 | 9,982.00
+Northern Distribution Warehouse | Munchies Honey Roasted Peanuts | 1,521,616.00 | 18,868,038.40 | 7,790.00
+Northern Distribution Warehouse | Munchies Potato Crisps Cheese & Onion | 1,826,806.00 | 17,537,337.60 | 10,333.00
+Northern Distribution Warehouse | Munchies Potato Crisps Chilli | 1,814,424.00 | 16,511,258.40 | 11,200.00
+Northern Distribution Warehouse | Munchies Cream Biscuits | 1,318,893.00 | 15,431,048.10 | 7,055.00
+Southern Distribution Warehouse | Munchies Original Wheat Cereal | 5,358,565.00 | 195,051,766.00 | 34,300.00
+Southern Distribution Warehouse | Munchies Honey Cornflakes | 5,411,881.00 | 193,745,339.80 | 39,177.00
+Southern Distribution Warehouse | Munchies Bran Flakes | 5,394,638.00 | 183,957,155.80 | 41,165.00
+Southern Distribution Warehouse | Munchies Original Cornflakes | 5,515,253.00 | 172,075,893.60 | 43,540.00
+Southern Distribution Warehouse | Munchies Chocolate Wheat Cereal | 3,960,334.00 | 160,393,527.00 | 23,717.00
+Southern Distribution Warehouse | Munchies Honey Bran Flakes | 3,983,539.00 | 154,959,667.10 | 25,542.00
+Southern Distribution Warehouse | Munchies Strawberry Crunch | 3,578,700.00 | 151,379,010.00 | 20,428.00
+Southern Distribution Warehouse | Munchies Chocolate Crunch | 3,128,719.00 | 138,289,379.80 | 15,232.00
+Southern Distribution Warehouse | Munchies Banana Crunch | 3,302,640.00 | 137,720,088.00 | 17,361.00
+Southern Distribution Warehouse | Munchies Chocolate Biscuits | 3,536,080.00 | 39,957,704.00 | 22,128.00
+Southern Distribution Warehouse | Munchies Salted Peanuts | 3,707,872.00 | 37,820,294.40 | 23,149.00
+Southern Distribution Warehouse | Munchies Potato Crisps Original | 4,465,112.00 | 37,506,940.80 | 34,018.00
+Southern Distribution Warehouse | Munchies Potato Crisps Cheese & Onion | 3,010,812.00 | 28,903,795.20 | 17,404.00
+Southern Distribution Warehouse | Munchies Honey Roasted Peanuts | 2,228,255.00 | 27,630,362.00 | 9,680.00
+Southern Distribution Warehouse | Munchies Coconut Biscuits | 2,542,666.00 | 27,460,792.80 | 13,613.00
+Southern Distribution Warehouse | Munchies Potato Crisps Chilli | 2,749,927.00 | 25,024,335.70 | 15,521.00
+Southern Distribution Warehouse | Munchies Cream Biscuits | 2,025,333.00 | 23,696,396.10 | 8,728.00
+
+================================================================================
+CLOSING STOCK TREND
+================================================================================
+year | month | period | closing_stock | stock_value | damaged_units
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 16,340,523.00 | 435,033,069.20 | 111,453.00
+2,023 | 2 | 2023-02 | 14,703,582.00 | 400,645,610.80 | 101,919.00
+2,023 | 3 | 2023-03 | 17,040,730.00 | 453,290,963.00 | 108,286.00
+2,023 | 4 | 2023-04 | 16,588,610.00 | 446,966,632.00 | 110,378.00
+2,023 | 5 | 2023-05 | 16,308,740.00 | 438,238,078.90 | 109,790.00
+2,023 | 6 | 2023-06 | 16,615,195.00 | 453,906,457.60 | 108,089.00
+2,023 | 7 | 2023-07 | 17,121,483.00 | 455,583,009.80 | 106,415.00
+2,023 | 8 | 2023-08 | 16,944,609.00 | 432,360,567.10 | 115,872.00
+2,023 | 9 | 2023-09 | 16,281,218.00 | 433,255,682.70 | 106,885.00
+2,023 | 10 | 2023-10 | 16,794,007.00 | 454,671,314.40 | 107,725.00
+2,023 | 11 | 2023-11 | 16,207,874.00 | 449,052,099.80 | 102,190.00
+2,023 | 12 | 2023-12 | 16,663,920.00 | 445,912,387.20 | 109,789.00
+2,024 | 1 | 2024-01 | 17,136,623.00 | 464,094,405.80 | 104,129.00
+2,024 | 2 | 2024-02 | 14,989,955.00 | 410,294,372.20 | 92,557.00
+2,024 | 3 | 2024-03 | 18,266,030.00 | 493,201,553.80 | 116,401.00
+2,024 | 4 | 2024-04 | 15,525,921.00 | 432,770,370.40 | 98,329.00
+2,024 | 5 | 2024-05 | 17,624,395.00 | 482,991,582.20 | 106,158.00
+2,024 | 6 | 2024-06 | 16,461,991.00 | 440,780,854.20 | 103,987.00
+2,024 | 7 | 2024-07 | 17,186,653.00 | 465,372,431.40 | 113,112.00
+2,024 | 8 | 2024-08 | 16,343,680.00 | 441,599,730.40 | 106,070.00
+2,024 | 9 | 2024-09 | 17,519,919.00 | 484,240,707.40 | 107,012.00
+2,024 | 10 | 2024-10 | 17,180,709.00 | 473,976,304.30 | 110,909.00
+2,024 | 11 | 2024-11 | 15,689,961.00 | 419,329,316.70 | 101,481.00
+2,024 | 12 | 2024-12 | 16,194,232.00 | 423,827,959.60 | 106,031.00
+2,025 | 1 | 2025-01 | 16,551,602.00 | 450,955,220.30 | 106,333.00
+2,025 | 2 | 2025-02 | 14,311,099.00 | 391,242,062.90 | 92,519.00
+2,025 | 3 | 2025-03 | 15,629,476.00 | 434,634,460.90 | 101,698.00
+2,025 | 4 | 2025-04 | 15,573,253.00 | 412,355,637.40 | 97,799.00
+2,025 | 5 | 2025-05 | 17,154,219.00 | 468,800,959.00 | 107,105.00
+2,025 | 6 | 2025-06 | 16,027,873.00 | 427,418,058.60 | 100,456.00
+2,025 | 7 | 2025-07 | 15,269,729.00 | 408,228,746.90 | 96,753.00
+2,025 | 8 | 2025-08 | 16,532,540.00 | 448,591,792.30 | 111,735.00
+2,025 | 9 | 2025-09 | 16,665,549.00 | 447,926,508.90 | 103,465.00
+2,025 | 10 | 2025-10 | 16,093,896.00 | 425,725,236.30 | 101,623.00
+2,025 | 11 | 2025-11 | 15,838,285.00 | 433,232,680.10 | 98,332.00
+2,025 | 12 | 2025-12 | 16,435,565.00 | 450,136,911.90 | 105,865.00
+
+================================================================================
+DAMAGED UNITS BY PRODUCT
+================================================================================
+product_name | damaged_units | closing_stock | damage_rate
+--------------------------------------------------------------------------------
+Munchies Original Cornflakes | 453,979.00 | 49,924,989.00 | 0.91
+Munchies Honey Cornflakes | 374,410.00 | 50,166,121.00 | 0.75
+Munchies Bran Flakes | 343,695.00 | 48,453,197.00 | 0.71
+Munchies Original Wheat Cereal | 315,270.00 | 46,802,271.00 | 0.67
+Munchies Potato Crisps Original | 281,662.00 | 39,269,514.00 | 0.72
+Munchies Honey Bran Flakes | 237,411.00 | 38,827,809.00 | 0.61
+Munchies Chocolate Biscuits | 228,860.00 | 33,270,350.00 | 0.69
+Munchies Chocolate Wheat Cereal | 225,421.00 | 38,638,048.00 | 0.58
+Munchies Salted Peanuts | 210,942.00 | 32,373,128.00 | 0.65
+Munchies Potato Crisps Chilli | 167,708.00 | 27,389,605.00 | 0.61
+Munchies Strawberry Crunch | 165,555.00 | 32,449,578.00 | 0.51
+Munchies Banana Crunch | 150,850.00 | 29,805,093.00 | 0.51
+Munchies Potato Crisps Cheese & Onion | 146,513.00 | 27,139,048.00 | 0.54
+Munchies Chocolate Crunch | 137,567.00 | 26,947,377.00 | 0.51
+Munchies Coconut Biscuits | 126,454.00 | 23,972,747.00 | 0.53
+Munchies Cream Biscuits | 111,639.00 | 22,439,874.00 | 0.50
+Munchies Honey Roasted Peanuts | 110,714.00 | 21,944,897.00 | 0.50
+
+================================================================================
+STOCK VALUE BY PRODUCT
+================================================================================
+product_name | category | stock_value | closing_stock
+--------------------------------------------------------------------------------
+Munchies Honey Cornflakes | Cereal | 1,795,947,131.80 | 50,166,121.00
+Munchies Original Wheat Cereal | Cereal | 1,703,602,664.40 | 46,802,271.00
+Munchies Bran Flakes | Cereal | 1,652,254,017.70 | 48,453,197.00
+Munchies Chocolate Wheat Cereal | Cereal | 1,564,840,944.00 | 38,638,048.00
+Munchies Original Cornflakes | Cereal | 1,557,659,656.80 | 49,924,989.00
+Munchies Honey Bran Flakes | Cereal | 1,510,401,770.10 | 38,827,809.00
+Munchies Strawberry Crunch | Cereal | 1,372,617,149.40 | 32,449,578.00
+Munchies Banana Crunch | Cereal | 1,242,872,378.10 | 29,805,093.00
+Munchies Chocolate Crunch | Cereal | 1,191,074,063.40 | 26,947,377.00
+Munchies Chocolate Biscuits | Snacks | 375,954,955.00 | 33,270,350.00
+Munchies Salted Peanuts | Snacks | 330,205,905.60 | 32,373,128.00
+Munchies Potato Crisps Original | Snacks | 329,863,917.60 | 39,269,514.00
+Munchies Honey Roasted Peanuts | Snacks | 272,116,722.80 | 21,944,897.00
+Munchies Cream Biscuits | Snacks | 262,546,525.80 | 22,439,874.00
+Munchies Potato Crisps Cheese & Onion | Snacks | 260,534,860.80 | 27,139,048.00
+Munchies Coconut Biscuits | Snacks | 258,905,667.60 | 23,972,747.00
+Munchies Potato Crisps Chilli | Snacks | 249,245,405.50 | 27,389,605.00
+
+================================================================================
+PURCHASE VALUE OVER TIME
+================================================================================
+year | month | period | purchase_value
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 1,425,544.68
+2,023 | 2 | 2023-02 | 2,246,434.23
+2,023 | 3 | 2023-03 | 2,245,607.49
+2,023 | 4 | 2023-04 | 2,840,755.82
+2,023 | 5 | 2023-05 | 1,816,820.28
+2,023 | 6 | 2023-06 | 2,914,388.38
+2,023 | 7 | 2023-07 | 1,600,564.59
+2,023 | 8 | 2023-08 | 2,248,049.13
+2,023 | 9 | 2023-09 | 2,242,019.12
+2,023 | 10 | 2023-10 | 3,438,904.37
+2,023 | 11 | 2023-11 | 3,096,754.96
+2,023 | 12 | 2023-12 | 5,472,784.33
+2,024 | 1 | 2024-01 | 5,401,337.66
+2,024 | 2 | 2024-02 | 3,717,333.68
+2,024 | 3 | 2024-03 | 4,579,721.60
+2,024 | 4 | 2024-04 | 5,201,842.34
+2,024 | 5 | 2024-05 | 4,160,921.97
+2,024 | 6 | 2024-06 | 6,230,687.40
+2,024 | 7 | 2024-07 | 4,966,312.84
+2,024 | 8 | 2024-08 | 4,891,946.25
+2,024 | 9 | 2024-09 | 5,758,498.80
+2,024 | 10 | 2024-10 | 6,175,057.96
+2,024 | 11 | 2024-11 | 7,438,978.82
+2,024 | 12 | 2024-12 | 7,692,619.78
+2,025 | 1 | 2025-01 | 8,021,910.57
+2,025 | 2 | 2025-02 | 7,755,153.66
+2,025 | 3 | 2025-03 | 10,754,438.54
+2,025 | 4 | 2025-04 | 10,592,169.57
+2,025 | 5 | 2025-05 | 11,295,556.66
+2,025 | 6 | 2025-06 | 9,312,132.47
+2,025 | 7 | 2025-07 | 12,537,299.29
+2,025 | 8 | 2025-08 | 9,573,031.76
+2,025 | 9 | 2025-09 | 9,914,236.32
+2,025 | 10 | 2025-10 | 13,153,147.07
+2,025 | 11 | 2025-11 | 13,128,138.94
+2,025 | 12 | 2025-12 | 8,925,565.44
+
+================================================================================
+SUPPLIER SPENDING
+================================================================================
+supplier_name | supplier_type | supplier_spending | quantity_received
+--------------------------------------------------------------------------------
+Lusaka Edible Oils | Ingredient Supplier | 19,350,899.12 | 326,170.40
+Southern Food Supplies | Ingredient Supplier | 18,755,676.24 | 334,593.16
+Zambezi Oils & Commodities | Ingredient Supplier | 18,144,473.62 | 296,616.64
+Copperbelt Oil Suppliers | Ingredient Supplier | 17,152,623.65 | 355,663.26
+Eastern Ingredients Traders | Ingredient Supplier | 16,739,107.34 | 331,130.67
+Lusaka Flavour & Ingredients | Ingredient Supplier | 15,309,712.63 | 300,346.40
+Central Oils & Foods | Ingredient Supplier | 14,935,749.67 | 273,029.03
+Central Food Ingredients | Packaging Supplier | 6,458,701.91 | 1,609,375.36
+Kafue Packaging Traders | Packaging Supplier | 5,799,791.45 | 1,704,112.58
+Kitwe Packaging Solutions | Packaging Supplier | 5,598,336.49 | 1,637,394.74
+Manda Hill Packaging Supplies | Packaging Supplier | 5,543,081.40 | 1,590,111.26
+Copperbelt Food Ingredients | Packaging Supplier | 5,318,220.89 | 1,474,836.38
+Zambezi Ingredients Ltd | Packaging Supplier | 4,951,804.38 | 1,306,899.07
+Kasama Agricultural Suppliers | Chemical & Cleaning Supplier | 4,676,466.34 | 155,819.24
+Zambezi Industrial Chemicals | Chemical & Cleaning Supplier | 4,202,389.25 | 134,335.77
+Lusaka Food Ingredients | Packaging Supplier | 4,092,815.08 | 1,241,428.21
+Central Packaging Supplies | Agricultural Supplier | 3,721,103.39 | 207,551.88
+Northern Farm Inputs | Agricultural Supplier | 3,700,531.72 | 171,006.36
+Kitwe Agricultural Traders | Agricultural Supplier | 3,550,083.49 | 194,931.04
+Choma Agricultural Traders | Chemical & Cleaning Supplier | 3,405,026.40 | 79,391.11
+Zambezi Packaging Industries | Agricultural Supplier | 3,360,868.42 | 174,863.50
+Southern Grain Merchants | Agricultural Supplier | 3,321,592.90 | 178,869.01
+Mumbwa Agricultural Supplies | Agricultural Supplier | 3,242,431.24 | 154,398.68
+Lusaka Packaging Solutions | Agricultural Supplier | 3,195,642.90 | 174,728.01
+Mansa Food & Agricultural Supplies | Agricultural Supplier | 3,095,152.39 | 150,802.83
+Copperbelt Packaging Traders | Agricultural Supplier | 3,024,125.52 | 162,423.08
+Mazabuka Grain & Supplies | Agricultural Supplier | 2,950,426.69 | 154,786.82
+Solwezi Agricultural Traders | Agricultural Supplier | 2,813,829.28 | 142,415.77
+Kafue Cleaning Solutions | Oil Supplier | 2,672,370.15 | 88,050.97
+Ndola Food Commodities | Agricultural Supplier | 2,504,858.06 | 126,184.08
+Central Chemical Traders | Oil Supplier | 1,973,499.50 | 70,647.02
+Copperbelt Hygiene Supplies | Oil Supplier | 1,715,875.38 | 65,271.00
+Copperbelt Grain Traders | Grain Supplier | 1,309,552.28 | 116,183.21
+Eastern Agricultural Supplies | Grain Supplier | 1,213,066.02 | 101,877.86
+Kafue Grain Traders | Grain Supplier | 1,148,112.37 | 94,232.71
+Zambezi Grain Supplies | Grain Supplier | 1,140,974.67 | 109,481.21
+Kabwe Farm & Food Supplies | Grain Supplier | 989,805.12 | 94,217.05
+Lusaka Industrial Supplies | Oil Supplier | 972,163.82 | 36,348.85
+Central Milling Suppliers | Grain Supplier | 715,725.60 | 60,757.51
+
+================================================================================
+DELIVERY STATUS
+================================================================================
+delivery_status | deliveries | quantity_shipped | delivery_cost
+--------------------------------------------------------------------------------
+Delivered | 28,547 | 19,366,432.00 | 26,285,554.65
+Late | 1,601 | 1,094,520.00 | 1,493,574.86
+Partially Delivered | 637 | 326,614.00 | 518,205.55
+In Transit | 623 | 225,382.00 | 411,087.68
+Failed Delivery | 276 | 26,114.00 | 142,683.85
+
+================================================================================
+DELIVERY SUCCESS RATE BY YEAR
+================================================================================
+year | total_deliveries | successful_deliveries | delivery_success_rate
+--------------------------------------------------------------------------------
+2,023 | 6,818 | 6,139.00 | 90.04
+2,024 | 9,793 | 8,852.00 | 90.39
+2,025 | 15,009 | 13,499.00 | 89.94
+2,026 | 64 | 57.00 | 89.06
+
+================================================================================
+PURCHASES BY MATERIAL CATEGORY
+================================================================================
+material_category | purchase_value | quantity_ordered | quantity_received
+--------------------------------------------------------------------------------
+Packaging Materials | 37,762,751.60 | 11,541,131.49 | 10,564,157.60
+Flavourings | 35,624,897.18 | 306,388.18 | 275,570.01
+Cocoa & Chocolate | 24,278,425.97 | 308,882.71 | 278,787.14
+Oils & Fats | 21,443,197.61 | 812,279.45 | 749,617.48
+Nuts & Seeds | 21,385,746.46 | 564,862.49 | 512,314.71
+Grains & Cereals | 20,522,976.04 | 1,964,963.84 | 1,797,791.98
+Salt & Seasonings | 19,793,107.54 | 545,034.94 | 491,826.10
+Sweeteners | 17,849,312.71 | 769,311.50 | 717,956.46
+Cleaning & Sanitation | 12,283,881.99 | 396,953.91 | 369,546.12
+Food Additives | 11,822,369.67 | 253,520.14 | 223,714.13
+
+================================================================================
+DELIVERY DISTANCE OVER TIME
+================================================================================
+year | month | period | total_distance_km | average_distance_km
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 50,475.19 | 100.55
+2,023 | 2 | 2023-02 | 45,855.99 | 99.69
+2,023 | 3 | 2023-03 | 53,486.26 | 101.68
+2,023 | 4 | 2023-04 | 52,751.30 | 96.61
+2,023 | 5 | 2023-05 | 61,686.54 | 112.77
+2,023 | 6 | 2023-06 | 63,567.86 | 115.16
+2,023 | 7 | 2023-07 | 60,179.29 | 111.44
+2,023 | 8 | 2023-08 | 65,922.69 | 108.96
+2,023 | 9 | 2023-09 | 62,698.11 | 106.99
+2,023 | 10 | 2023-10 | 72,515.81 | 108.88
+2,023 | 11 | 2023-11 | 64,981.59 | 100.59
+2,023 | 12 | 2023-12 | 67,965.72 | 105.87
+2,024 | 1 | 2024-01 | 66,471.41 | 104.02
+2,024 | 2 | 2024-02 | 62,732.97 | 100.05
+2,024 | 3 | 2024-03 | 71,654.25 | 100.64
+2,024 | 4 | 2024-04 | 66,344.47 | 91.89
+2,024 | 5 | 2024-05 | 76,385.38 | 95.96
+2,024 | 6 | 2024-06 | 81,969.30 | 106.04
+2,024 | 7 | 2024-07 | 88,866.81 | 101.79
+2,024 | 8 | 2024-08 | 89,212.50 | 101.72
+2,024 | 9 | 2024-09 | 84,147.75 | 98.30
+2,024 | 10 | 2024-10 | 95,850.43 | 100.90
+2,024 | 11 | 2024-11 | 94,486.20 | 100.09
+2,024 | 12 | 2024-12 | 92,580.35 | 90.41
+2,025 | 1 | 2025-01 | 108,198.58 | 96.18
+2,025 | 2 | 2025-02 | 94,931.22 | 91.10
+2,025 | 3 | 2025-03 | 112,273.95 | 90.40
+2,025 | 4 | 2025-04 | 113,027.08 | 92.34
+2,025 | 5 | 2025-05 | 110,559.99 | 83.44
+2,025 | 6 | 2025-06 | 112,105.88 | 87.93
+2,025 | 7 | 2025-07 | 108,180.45 | 84.06
+2,025 | 8 | 2025-08 | 107,843.87 | 85.52
+2,025 | 9 | 2025-09 | 117,071.77 | 88.22
+2,025 | 10 | 2025-10 | 111,217.69 | 87.50
+2,025 | 11 | 2025-11 | 113,824.12 | 85.71
+2,025 | 12 | 2025-12 | 110,770.10 | 85.08
+2,026 | 1 | 2026-01 | 6,410.95 | 100.17
+
+================================================================================
+DELIVERY STATUS BY YEAR
+================================================================================
+year | delivery_status | deliveries
+--------------------------------------------------------------------------------
+2,023 | Delivered | 6,139
+2,023 | Late | 347
+2,023 | Partially Delivered | 140
+2,023 | In Transit | 131
+2,023 | Failed Delivery | 61
+2,024 | Delivered | 8,852
+2,024 | Late | 473
+2,024 | Partially Delivered | 201
+2,024 | In Transit | 192
+2,024 | Failed Delivery | 75
+2,025 | Delivered | 13,499
+2,025 | Late | 779
+2,025 | In Transit | 298
+2,025 | Partially Delivered | 293
+2,025 | Failed Delivery | 140
+2,026 | Delivered | 57
+2,026 | Partially Delivered | 3
+2,026 | Late | 2
+2,026 | In Transit | 2
+
+================================================================================
+QUALITY EVENTS BY TYPE
+================================================================================
+event_type | events | affected_quantity
+--------------------------------------------------------------------------------
+Customer Return | 640 | 82,104.00
+Quality Complaint | 350 | 16,697.00
+Damaged Product | 288 | 15,245.00
+Packaging Defect | 204 | 14,517.00
+Manufacturing Defect | 171 | 8,524.00
+Expired Product | 101 | 10,615.00
+Short Shipment | 93 | 3,931.00
+
+================================================================================
+QUALITY EVENTS BY PRODUCT
+================================================================================
+product_name | quality_events | affected_quantity
+--------------------------------------------------------------------------------
+Munchies Original Cornflakes | 155 | 12,920.00
+Munchies Chocolate Biscuits | 139 | 10,857.00
+Munchies Original Wheat Cereal | 137 | 12,090.00
+Munchies Bran Flakes | 128 | 12,023.00
+Munchies Potato Crisps Original | 126 | 8,802.00
+Munchies Honey Cornflakes | 123 | 11,694.00
+Munchies Honey Bran Flakes | 121 | 9,037.00
+Munchies Potato Crisps Chilli | 118 | 7,449.00
+Munchies Chocolate Wheat Cereal | 100 | 8,524.00
+Munchies Banana Crunch | 100 | 8,567.00
+Munchies Potato Crisps Cheese & Onion | 96 | 8,442.00
+Munchies Coconut Biscuits | 96 | 7,114.00
+Munchies Salted Peanuts | 95 | 7,596.00
+Munchies Strawberry Crunch | 94 | 7,087.00
+Munchies Chocolate Crunch | 85 | 8,329.00
+Munchies Honey Roasted Peanuts | 72 | 6,839.00
+Munchies Cream Biscuits | 62 | 4,263.00
+
+================================================================================
+EXPENSES OVER TIME
+================================================================================
+year | month | period | expenses
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 1,978,630.00
+2,023 | 2 | 2023-02 | 1,471,840.00
+2,023 | 3 | 2023-03 | 2,835,320.00
+2,023 | 4 | 2023-04 | 2,159,200.00
+2,023 | 5 | 2023-05 | 2,239,370.00
+2,023 | 6 | 2023-06 | 2,218,210.00
+2,023 | 7 | 2023-07 | 2,159,370.00
+2,023 | 8 | 2023-08 | 2,740,850.00
+2,023 | 9 | 2023-09 | 2,879,360.00
+2,023 | 10 | 2023-10 | 2,517,370.00
+2,023 | 11 | 2023-11 | 2,533,560.00
+2,023 | 12 | 2023-12 | 3,185,820.00
+2,024 | 1 | 2024-01 | 2,526,300.00
+2,024 | 2 | 2024-02 | 2,313,270.00
+2,024 | 3 | 2024-03 | 2,451,680.00
+2,024 | 4 | 2024-04 | 2,214,620.00
+2,024 | 5 | 2024-05 | 2,732,860.00
+2,024 | 6 | 2024-06 | 2,440,840.00
+2,024 | 7 | 2024-07 | 2,806,300.00
+2,024 | 8 | 2024-08 | 2,405,970.00
+2,024 | 9 | 2024-09 | 2,123,930.00
+2,024 | 10 | 2024-10 | 2,557,370.00
+2,024 | 11 | 2024-11 | 3,037,230.00
+2,024 | 12 | 2024-12 | 2,862,610.00
+2,025 | 1 | 2025-01 | 2,788,360.00
+2,025 | 2 | 2025-02 | 2,653,320.00
+2,025 | 3 | 2025-03 | 2,303,000.00
+2,025 | 4 | 2025-04 | 2,318,930.00
+2,025 | 5 | 2025-05 | 2,560,320.00
+2,025 | 6 | 2025-06 | 2,347,410.00
+2,025 | 7 | 2025-07 | 1,877,230.00
+2,025 | 8 | 2025-08 | 2,642,270.00
+2,025 | 9 | 2025-09 | 2,042,470.00
+2,025 | 10 | 2025-10 | 2,006,220.00
+2,025 | 11 | 2025-11 | 2,845,620.00
+2,025 | 12 | 2025-12 | 2,316,910.00
+
+================================================================================
+QUALITY EVENTS OVER TIME
+================================================================================
+year | month | period | quality_events | affected_quantity
+--------------------------------------------------------------------------------
+2,023 | 1 | 2023-01 | 11 | 1,277.00
+2,023 | 2 | 2023-02 | 28 | 2,752.00
+2,023 | 3 | 2023-03 | 27 | 2,140.00
+2,023 | 4 | 2023-04 | 29 | 1,174.00
+2,023 | 5 | 2023-05 | 38 | 3,712.00
+2,023 | 6 | 2023-06 | 35 | 3,127.00
+2,023 | 7 | 2023-07 | 33 | 3,969.00
+2,023 | 8 | 2023-08 | 38 | 4,091.00
+2,023 | 9 | 2023-09 | 35 | 3,603.00
+2,023 | 10 | 2023-10 | 32 | 2,475.00
+2,023 | 11 | 2023-11 | 43 | 3,891.00
+2,023 | 12 | 2023-12 | 34 | 2,700.00
+2,024 | 1 | 2024-01 | 32 | 1,823.00
+2,024 | 2 | 2024-02 | 39 | 2,507.00
+2,024 | 3 | 2024-03 | 49 | 3,747.00
+2,024 | 4 | 2024-04 | 39 | 3,324.00
+2,024 | 5 | 2024-05 | 48 | 4,363.00
+2,024 | 6 | 2024-06 | 55 | 3,129.00
+2,024 | 7 | 2024-07 | 51 | 3,159.00
+2,024 | 8 | 2024-08 | 52 | 3,525.00
+2,024 | 9 | 2024-09 | 40 | 3,208.00
+2,024 | 10 | 2024-10 | 48 | 3,171.00
+2,024 | 11 | 2024-11 | 63 | 4,237.00
+2,024 | 12 | 2024-12 | 51 | 4,642.00
+2,025 | 1 | 2025-01 | 54 | 5,378.00
+2,025 | 2 | 2025-02 | 57 | 5,773.00
+2,025 | 3 | 2025-03 | 76 | 6,874.00
+2,025 | 4 | 2025-04 | 90 | 5,748.00
+2,025 | 5 | 2025-05 | 82 | 7,735.00
+2,025 | 6 | 2025-06 | 58 | 4,194.00
+2,025 | 7 | 2025-07 | 72 | 7,386.00
+2,025 | 8 | 2025-08 | 82 | 6,300.00
+2,025 | 9 | 2025-09 | 71 | 5,323.00
+2,025 | 10 | 2025-10 | 66 | 4,786.00
+2,025 | 11 | 2025-11 | 74 | 5,289.00
+2,025 | 12 | 2025-12 | 69 | 6,487.00
+2,026 | 1 | 2026-01 | 42 | 4,587.00
+2,026 | 2 | 2026-02 | 4 | 27.00
+
+================================================================================
+EXPENSES BY CATEGORY
+================================================================================
+expense_category | expenses | transactions
+--------------------------------------------------------------------------------
+Raw Materials | 23,903,950.00 | 557
+Salaries & Wages | 11,379,990.00 | 231
+Utilities | 11,077,960.00 | 318
+Packaging | 9,565,230.00 | 393
+Equipment Maintenance | 9,100,940.00 | 242
+Transport & Logistics | 7,632,610.00 | 390
+Marketing | 5,556,830.00 | 186
+Sales & Distribution | 2,575,800.00 | 166
+Factory Supplies | 2,470,800.00 | 274
+Insurance | 2,048,430.00 | 55
+Quality Control | 1,895,650.00 | 170
+Office & Administration | 885,750.00 | 144
+
+================================================================================
+EXPENSES BY DEPARTMENT
+================================================================================
+department | expenses | transactions
+--------------------------------------------------------------------------------
+Procurement | 23,903,950.00 | 557
+Production | 21,136,970.00 | 909
+Human Resources | 11,379,990.00 | 231
+Operations | 11,077,960.00 | 318
+Logistics | 7,632,610.00 | 390
+Marketing | 5,556,830.00 | 186
+Sales | 2,575,800.00 | 166
+Finance | 2,048,430.00 | 55
+Quality Assurance | 1,895,650.00 | 170
+Administration | 885,750.00 | 144
+
+================================================================================
+PRODUCT DATA QUALITY
+================================================================================
+total_products | missing_product_names | missing_categories | missing_prices | missing_standard_costs
+--------------------------------------------------------------------------------
+17 | 0.00 | 0.00 | 0.00 | 0.00
+
+================================================================================
+CUSTOMER DATA QUALITY
+================================================================================
+total_customers | missing_names | missing_customer_types | missing_cities | missing_regions
+--------------------------------------------------------------------------------
+127 | 0.00 | 0.00 | 0.00 | 0.00
+
+================================================================================
+SALES DATA QUALITY
+================================================================================
+sales_rows | missing_revenue | missing_cost | missing_profit | missing_customer_id | missing_product_id
+--------------------------------------------------------------------------------
+78,143 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00
+
+================================================================================
+REFERENTIAL INTEGRITY CHECK
+================================================================================
+relationship | orphan_records
+--------------------------------------------------------------------------------
+sales -> customers | 0
+sales -> products | 0
+production -> products | 0
+inventory -> products | 0
+purchases -> suppliers | 0
+purchases -> raw_materials | 0
+deliveries -> sales | 0
+
+================================================================================
+DATASET SCALE SUMMARY
+================================================================================
+products | customers | suppliers | raw_materials | purchases | production_records | bom_records | inventory_records | sales_records | delivery_records | quality_records | expense_records
+--------------------------------------------------------------------------------
+17 | 127 | 42 | 61 | 4,137 | 11,173 | 89 | 22,718 | 78,143 | 31,684 | 1,847 | 3,126
